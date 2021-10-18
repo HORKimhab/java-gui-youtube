@@ -1,5 +1,6 @@
 
-import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.image.*; 
 
 public class Main {
 
@@ -12,6 +13,11 @@ public class Main {
         frame.setResizable(false);
         frame.setSize(420, 420);
         frame.setVisible(true);
+        
+        // Add image icon
+        // More: https://docs.oracle.com/javase/tutorial/uiswing/components/icon.html
+        ImageIcon icon = new ImageIcon("image/ubuntulogo.png");
+        frame.setIconImage(icon.getImage());
     }
 }
 
